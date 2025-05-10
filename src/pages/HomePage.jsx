@@ -27,9 +27,9 @@ const PathButton = styled.button`
   margin: 10px;
 
   @media screen and (max-width: 768px) {
-    font-size: 3vh;
-    height: 80px;
-    width: 150px;
+    font-size: 2vh;
+    height: 40px;
+    width: 90px;
   }
 `;
 
