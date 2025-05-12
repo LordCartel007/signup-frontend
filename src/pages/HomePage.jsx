@@ -91,6 +91,10 @@ const StyledDiv = styled.div`
 const StyledVideo = styled.video`
   height: 100vh;
   width: 100vw;
+  @media screen and (max-width: 767px) {
+    height: 70vh;
+    width: 100vw;
+  }
 `;
 
 const StyledTitleDiv = styled.div`
@@ -131,7 +135,7 @@ const HomePage = () => {
           <Title> Welcome To Cartel Ai </Title>
         </StyledTitleDiv>
       </StyledDiv>
-      <div className="containervideo">
+      <div className="containervideothree">
         <StyledVideo
           autoPlay
           loop

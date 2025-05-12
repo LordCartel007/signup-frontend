@@ -100,3 +100,16 @@ body {
     width: 100vw;
   }
 }
+
+.containervideothree {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+
+  overflow: hidden;
+  margin: 0%;
+  @media screen and (max-width: 767px) {
+    min-height: 70vh;
+    width: 100vw;
+  }
+}
