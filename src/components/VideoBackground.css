@@ -84,3 +84,12 @@ body {
     font-size: 2.3vh;
   }
 }
+
+.containervideotwo {
+  position: relative;
+  width: 100vw;
+
+  max-height: 50vh;
+  overflow: hidden;
+  margin-bottom: 0%;
+}

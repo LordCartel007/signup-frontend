@@ -4,15 +4,10 @@ import styled from "styled-components";
 import "../components/VideoBackground.css";
 import { useNavigate } from "react-router-dom";
 
-const StyledDiv = styled.div`
-  @media screen and (max-width: 767px) {
-  }
-`;
-
 const Title = styled.h1`
   font-weight: bolder;
 
-  margin: 0;
+  margin-top: 20px;
   color: #ffc107;
   text-decoration: none;
   font-family: "Rye", serif;
@@ -84,12 +79,44 @@ const PathButton = styled.button`
   }
 `;
 
+const StyledDiv = styled.div`
+  height: 50vh;
+`;
+
+const StyledVideo = styled.video`
+  height: 50vh;
+`;
+
+const StyledTitleDiv = styled.div`
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+`;
+
 const HomePage = () => {
   const navigate = useNavigate();
   return (
     <div>
       <Header />
-      <StyledDiv className="containervideo">
+      <StyledDiv className="containervideotwo">
+        <StyledVideo
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="background-clip"
+        >
+          <source
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/Tesla's+Optimus+Robot+-+BestInTESLA+(1080p%2C+h264)+(1).mp4"
+            type="video/mp4"
+          />
+        </StyledVideo>
+        <StyledTitleDiv className=" ">
+          <Title> Welcome To Cartel Ai </Title>
+        </StyledTitleDiv>
+      </StyledDiv>
+      <div className="containervideo">
         <video autoPlay loop muted playsInline className="background-clip">
           <source
             src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/liquid+ink+cut+video.mp4"
@@ -97,7 +124,6 @@ const HomePage = () => {
           />
         </video>
         <div className="content">
-          <h1 className="heading-top font-extrabold">Cartel Ai</h1>
           <div className="">
             <Title>The Ai You can trust</Title>
             <Pwords>
@@ -129,7 +155,7 @@ const HomePage = () => {
             Login
           </PathButton>
         </div>
-      </StyledDiv>
+      </div>
     </div>
   );
 };
