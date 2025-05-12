@@ -66,7 +66,7 @@ const PathButton = styled.button`
 
   background-color: #0e0e10;
   color: #ffc107;
-  padding: 10px;
+  padding: 5px;
   font-size: 3vh;
   height: 80px;
   width: 200px;
@@ -81,10 +81,16 @@ const PathButton = styled.button`
 
 const StyledDiv = styled.div`
   height: 50vh;
+  @media screen and (max-width: 767px) {
+    height: 30vh;
+  }
 `;
 
 const StyledVideo = styled.video`
   height: 50vh;
+  @media screen and (max-width: 767px) {
+    height: 30vh;
+  }
 `;
 
 const StyledTitleDiv = styled.div`
@@ -92,6 +98,12 @@ const StyledTitleDiv = styled.div`
   text-align: center;
   padding: 10px;
   margin-top: 20px;
+`;
+
+const StyledVideotwo = styled.video`
+  @media screen and (max-width: 767px) {
+    height: 70vh;
+  }
 `;
 
 const HomePage = () => {
@@ -108,7 +120,7 @@ const HomePage = () => {
           className="background-clip"
         >
           <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/Tesla's+Optimus+Robot+-+BestInTESLA+(1080p%2C+h264)+(1).mp4"
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/telsa+bot+cut.mp4"
             type="video/mp4"
           />
         </StyledVideo>
@@ -117,12 +129,18 @@ const HomePage = () => {
         </StyledTitleDiv>
       </StyledDiv>
       <div className="containervideo">
-        <video autoPlay loop muted playsInline className="background-clip">
+        <StyledVideotwo
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="background-clip"
+        >
           <source
             src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/liquid+ink+cut+video.mp4"
             type="video/mp4"
           />
-        </video>
+        </StyledVideotwo>
         <div className="content">
           <div className="">
             <Title>The Ai You can trust</Title>
