@@ -10,10 +10,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import "../components/VideoBackground.css";
 
-const StyledDiv = styled.div`
-  @media screen and (max-width: 767px) {
-  }
-`;
+const StyledDiv = styled.div``;
 
 const SignUpPage = () => {
   const [name, setName] = useState("");
