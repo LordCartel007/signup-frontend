@@ -17,6 +17,7 @@ body {
 
   overflow: hidden;
   margin-bottom: 0%;
+  margin-top: 0%;
   @media screen and (max-width: 767px) {
     min-height: 70vh;
   }
@@ -95,6 +96,7 @@ body {
   max-height: 50vh;
   overflow: hidden;
   margin-bottom: 0%;
+  margin-top: 0%;
   @media screen and (max-width: 767px) {
     max-height: 30vh;
   }
