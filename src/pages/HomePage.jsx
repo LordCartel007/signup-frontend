@@ -100,11 +100,7 @@ const StyledTitleDiv = styled.div`
   margin-top: 20px;
 `;
 
-const StyledVideotwo = styled.video`
-  @media screen and (max-width: 767px) {
-    height: 70vh;
-  }
-`;
+const StyledVideotwo = styled.video``;
 
 const HomePage = () => {
   const navigate = useNavigate();
