@@ -81,16 +81,16 @@ const PathButton = styled.button`
 
 const StyledDiv = styled.div`
   height: 50vh;
+  width: 100vw;
   @media screen and (max-width: 767px) {
     height: 30vh;
+    width: 100vw;
   }
 `;
 
 const StyledVideo = styled.video`
-  height: 50vh;
-  @media screen and (max-width: 767px) {
-    height: 30vh;
-  }
+  height: 100vh;
+  width: 100vw;
 `;
 
 const StyledTitleDiv = styled.div`
@@ -100,7 +100,14 @@ const StyledTitleDiv = styled.div`
   margin-top: 20px;
 `;
 
-const StyledVideotwo = styled.video``;
+const StyledVideotwo = styled.video`
+  height: 100vh;
+  width: 100vw;
+  @media screen and (max-width: 767px) {
+    height: 70vh;
+    width: 100vw;
+  }
+`;
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -108,7 +115,7 @@ const HomePage = () => {
     <div>
       <Header />
       <StyledDiv className="containervideotwo">
-        <StyledVideo
+        <StyledVideotwo
           autoPlay
           loop
           muted
@@ -119,13 +126,13 @@ const HomePage = () => {
             src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/telsa+bot+cut.mp4"
             type="video/mp4"
           />
-        </StyledVideo>
+        </StyledVideotwo>
         <StyledTitleDiv className=" ">
           <Title> Welcome To Cartel Ai </Title>
         </StyledTitleDiv>
       </StyledDiv>
       <div className="containervideo">
-        <StyledVideotwo
+        <StyledVideo
           autoPlay
           loop
           muted
@@ -136,7 +143,7 @@ const HomePage = () => {
             src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/liquid+ink+cut+video.mp4"
             type="video/mp4"
           />
-        </StyledVideotwo>
+        </StyledVideo>
         <div className="content">
           <div className="">
             <Title>The Ai You can trust</Title>

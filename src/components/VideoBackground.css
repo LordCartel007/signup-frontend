@@ -16,11 +16,7 @@ body {
   min-height: 100vh;
 
   overflow: hidden;
-  margin-bottom: 0%;
-  margin-top: 0%;
-  @media screen and (max-width: 767px) {
-    min-height: 70vh;
-  }
+  margin: 0%;
 }
 
 .background-clip {
@@ -28,7 +24,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
@@ -93,8 +89,14 @@ body {
   position: relative;
   width: 100vw;
 
-  max-height: 50vh;
+  max-height: 100vh;
   overflow: hidden;
   margin-bottom: 0%;
   margin-top: 0%;
+  height: 50vh;
+  width: 100vw;
+  @media screen and (max-width: 767px) {
+    height: 30vh;
+    width: 100vw;
+  }
 }

@@ -10,7 +10,10 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import "../components/VideoBackground.css";
 
-const StyledDiv = styled.div``;
+const StyledDiv = styled.div`
+  height: 100vh;
+  width: 100vw;
+`;
 
 const SignUpPage = () => {
   const [name, setName] = useState("");

@@ -10,8 +10,8 @@ import "../components/VideoBackground.css";
 import { useNavigate } from "react-router-dom";
 
 const StyledDiv = styled.div`
-  @media screen and (max-width: 767px) {
-  }
+  width: 100vw;
+  height: 100vh;
 `;
 
 const LoginPage = () => {
