@@ -9,6 +9,11 @@ import styled from "styled-components";
 
 import Header from "../components/Header.jsx";
 
+const StyledDiv = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
+
 const ForgotPasswordPage = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,11 +25,6 @@ const ForgotPasswordPage = () => {
     await forgotPassword(email);
     setIsSubmitted(true);
   };
-
-  const StyledDiv = styled.div`
-    width: 100vw;
-    height: 100vh;
-  `;
 
   return (
     <>
