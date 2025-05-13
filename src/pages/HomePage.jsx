@@ -144,7 +144,7 @@ const HomePage = () => {
           className="background-clip"
         >
           <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/liquid+ink+cut+video.mp4"
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/satisfactory+desserts+video.mp4"
             type="video/mp4"
           />
         </StyledVideo>
