@@ -3,6 +3,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const API_URL = "https://signup-auth-backend.vercel.app/api/auth";
+const API_URL_TWO = "https://signup-auth-backend.vercel.app/api/auth";
 
 axios.defaults.withCredentials = true; // to send cookies with requests
 
@@ -141,9 +142,12 @@ export const useAuthStore = create((set) => ({
   resetPassword: async (token, password) => {
     set({ isLoading: true, error: null });
     try {
-      const response = await axios.post(`${API_URL}/reset-password/${token}`, {
-        password,
-      });
+      const response = await axios.post(
+        `${API_URL_TWO}/reset-password/${token}`,
+        {
+          password,
+        }
+      );
       set({
         message: response.data.message,
         isLoading: false,
