@@ -8,6 +8,10 @@ import Input from "@/components/Input";
 import toast from "react-hot-toast";
 import styled from "styled-components";
 
+const StyledDiv = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
 // reset password page
 const ResetPasswordPage = () => {
   const [password, setPassword] = useState("");
@@ -35,10 +39,6 @@ const ResetPasswordPage = () => {
       toast.error(error.message || "Error resetting password");
     }
   };
-  const StyledDiv = styled.div`
-    width: 100vw;
-    height: 100vh;
-  `;
 
   return (
     <>
