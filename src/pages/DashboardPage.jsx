@@ -5,6 +5,7 @@ import { formatDate } from "@/utils/date";
 import Header from "../components/Header";
 import styled from "styled-components";
 import "../components/VideoBackground.css";
+import Footer from "../components/Footer";
 
 const StyledDiv = styled.div`
   @media screen and (max-width: 767px) {
@@ -19,7 +20,7 @@ const DashboardPage = () => {
   };
 
   const handleLink = async () => {
-    window.location.href = "https://cartel-chat-bot.vercel.app/";
+    window.location.href = "https://cartelai.autocartel.shop/";
   };
   if (user && !user.isVerified) {
     return (
@@ -135,6 +136,7 @@ const DashboardPage = () => {
           </motion.div>
         </div>
       </StyledDiv>
+      <Footer />
     </>
   );
 };

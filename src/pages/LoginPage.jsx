@@ -8,6 +8,7 @@ import Header from "../components/Header.jsx";
 import styled from "styled-components";
 import "../components/VideoBackground.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const StyledDiv = styled.div`
   width: 100vw;
@@ -127,6 +128,7 @@ const LoginPage = () => {
           </div>
         </div>
       </StyledDiv>
+      <Footer />
     </>
   );
 };

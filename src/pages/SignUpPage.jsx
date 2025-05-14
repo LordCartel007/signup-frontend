@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Header from "../components/Header";
 import "../components/VideoBackground.css";
-
+import Footer from "../components/Footer";
 const StyledDiv = styled.div`
   height: 100vh;
   width: 100vw;
@@ -123,6 +123,7 @@ const SignUpPage = () => {
           </motion.div>
         </div>
       </StyledDiv>
+      <Footer />
     </>
   );
 };

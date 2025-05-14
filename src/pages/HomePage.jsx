@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import "../components/VideoBackground.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Title = styled.h1`
   font-weight: bolder;
@@ -181,6 +182,7 @@ const HomePage = () => {
           </PathButton>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

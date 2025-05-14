@@ -53,7 +53,7 @@ const StyledNav = styled.nav`
   }
 `;
 
-const ExternalLink = styled.a`
+const ExternalLink = styled(NavLink)`
   color: #d9ecff;
   text-decoration: none;
   display: block;
@@ -121,7 +121,7 @@ export default function Header() {
               Sign Up
             </NavLink2>
             {/* Link to chat web app */}
-            <ExternalLink to="https://chatcartel.autocartel.shop">
+            <ExternalLink to="https://chat.autocartel.shop/">
               Message Us
             </ExternalLink>
           </StyledNav>
