@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import "../components/VideoBackground.css";
 import Footer from "../components/Footer";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 const StyledDiv = styled.div`
   @media screen and (max-width: 767px) {
@@ -24,9 +25,10 @@ const DashboardPage = () => {
   };
   if (user && !user.isVerified) {
     return (
-      <div className="text-center text-red-400 mt-20 text-xl font-semibold">
-        Your email is not verified. Please check your inbox to verify.
-      </div>
+      // <div className="text-center text-red-400 mt-20 text-xl font-semibold">
+      //   Your email is not verified. Please check your inbox to verify.
+      // </div>
+      <Navigate to="/" replace />
     );
   }
   return (
