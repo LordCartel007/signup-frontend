@@ -57,10 +57,6 @@ export default function Footer() {
       <Center>
         <FooterNav>
           <FooterLink to="/homepage">Home</FooterLink>
-
-          <ExternalLink to="https://chat.autocartel.shop/">
-            Message Us
-          </ExternalLink>
         </FooterNav>
         <FooterText>
           © {new Date().getFullYear()} Cartel Ai. All rights reserved.

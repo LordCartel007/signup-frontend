@@ -9,7 +9,7 @@ const Title = styled.h1`
   font-weight: bolder;
 
   margin-top: 20px;
-  color: #ffc107;
+  color: #ffffff;
   text-decoration: none;
   font-family: "Rye", serif;
   font-weight: 400;
@@ -44,37 +44,39 @@ const Pwords = styled.p`
   justify-content: center;
 
   @media screen and (max-width: 767px) {
-    font-size: 1rem;
+    font-size: 0%.9;
   }
 
   @media screen and (min-width: 767px) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   /* nest hub tv screen */
   @media screen and (min-width: 1023px) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
 const PathButton = styled.button`
-  border: 0;
-
-  border-radius: 10px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+  background-color: #ffc107;
+  color: #0e0e10; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
-
-  background-color: #0e0e10;
-  color: #ffc107;
-  padding: 5px;
-  font-size: 3vh;
-  height: 80px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Optional: Rounded corners */
+  font-family: "Rye", serif;
+  margin-top: 25px;
+  padding: 10px;
   width: 200px;
-  margin: 10px;
+  height: 50px;
+  font-style: normal;
 
   @media screen and (max-width: 768px) {
-    font-size: 2vh;
+    font-size: 10px;
     height: 40px;
     width: 90px;
   }
@@ -93,7 +95,7 @@ const StyledVideo = styled.video`
   height: 100vh;
   width: 100vw;
   @media screen and (max-width: 767px) {
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
   }
 `;
@@ -119,23 +121,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <StyledDiv className="containervideotwo">
-        <StyledVideotwo
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="background-clip"
-        >
-          <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/telsa+bot+cut.mp4"
-            type="video/mp4"
-          />
-        </StyledVideotwo>
-        <StyledTitleDiv className=" ">
-          <Title> Welcome To Cartel Ai </Title>
-        </StyledTitleDiv>
-      </StyledDiv>
+
       <div className="containervideothree">
         <StyledVideo
           autoPlay
@@ -145,7 +131,7 @@ const HomePage = () => {
           className="background-clip"
         >
           <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/satisfactory+desserts+video.mp4"
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/dessert+video+2.mp4"
             type="video/mp4"
           />
         </StyledVideo>
@@ -169,13 +155,13 @@ const HomePage = () => {
         </div>
         <div className="flex justify-center font-extrabold ">
           <PathButton
-            className="flex items-center justify-center px-4 py-2 rounded"
+            className="homebutton not-only:flex items-center justify-center px-4 py-2 rounded"
             onClick={() => navigate("/signup")}
           >
             Sign Up
           </PathButton>
           <PathButton
-            className="flex items-center justify-center px-4 py-2 rounded"
+            className="homebutton flex items-center justify-center px-4 py-2 rounded"
             onClick={() => navigate("/login")}
           >
             Login
