@@ -28,7 +28,7 @@ const DashboardPage = () => {
       // <div className="text-center text-red-400 mt-20 text-xl font-semibold">
       //   Your email is not verified. Please check your inbox to verify.
       // </div>
-      <Navigate to="/" replace />
+      <Navigate to="/homepage" replace />
     );
   }
   return (
