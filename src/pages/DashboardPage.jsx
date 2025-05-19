@@ -35,7 +35,7 @@ const DashboardPage = () => {
       <StyledDiv className="containervideo">
         <video autoPlay loop muted playsInline className="background-clip">
           <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/satisfactory+desserts+video.mp4"
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/dessert+video+2.mp4"
             type="video/mp4"
           />
         </video>
